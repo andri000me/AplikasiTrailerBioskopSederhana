@@ -1,0 +1,16 @@
+<?php
+include "../koneksi/koneksi.php";
+$username = $_POST['username'];
+$password = $_POST['password'];
+$tgl_lahir = $_POST['tgl_lahir'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
+$no_hp = $_POST['no_hp'];
+$query = mysql_query ("INSERT INTO user(id_user, username, password, tgl_lahir, jenis_kelamin, no_hp ) 
+		VALUES ('','$username','$password','$tgl_lahir','$jenis_kelamin','$no_hp')",$konek)or die (mysql_error());
+if($query) {
+?>
+<script language="JavaScript">
+document.location='addUser.php'</script>
+<?php
+}
+?>

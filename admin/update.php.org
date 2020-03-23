@@ -1,0 +1,18 @@
+<?php
+include "../koneksi/koneksi.php";
+$nama = $_GET['nama'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$email = $_POST['email'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
+$usia = $_POST['usia'];
+$no_hp = $_POST['no_hp'];
+$query=mysql_query ("UPDATE user SET nama='$nama', username='$username', password='$password', email='$email', jenis_kelamin='$jenis_kelamin', usia='$usia', no_hp='$no_hp' WHERE
+id_user='$id_user'",$konek)or die (mysql_error());
+if($query) {
+?>
+<script language="JavaScript">
+document.location='editing.php'</script>
+<?php
+}
+?>

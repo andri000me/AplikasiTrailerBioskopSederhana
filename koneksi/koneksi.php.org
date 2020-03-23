@@ -1,0 +1,8 @@
+<?php
+$localhost = "localhost";
+$host = "root";
+$pass = "";
+$db = "bioskop";
+$konek = mysql_connect($localhost,$host,$pass) or die ("Koneksi Error");
+mysql_select_db($db);
+?>

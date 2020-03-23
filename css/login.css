@@ -1,0 +1,67 @@
+html {
+background :#dcdcdc;
+}
+#login-form
+{
+ margin-top:90px;
+ background:#dcdcdc;
+}
+table{
+background:rgba(97, 95, 102, 0.87) none repeat scroll 0% 0%;
+width:45%;
+height:auto;
+margin:auto;
+padding:50px;
+float:center;
+border-radius:10px;
+box-shadow:3px 3px 23px 3px #888888;
+}
+table tr,td
+{
+ padding:5px;
+ //border:solid #e1e1e1 1px;
+}
+table tr td input
+{
+ width:100%;
+ height:40px;
+ border:solid #e1e1e1 1px;
+ border-radius:4px;
+ padding-left:10px;
+ font-family:Verdana, Geneva, sans-serif;
+ font-size:16px;
+ background:#f9f9f9;
+ transition-duration:0.5s;
+ box-shadow: inset 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+table tr td button
+{
+ width:50%;
+ height:40px;
+ border:0px;
+ background:rgba(12,45,78,11);
+ background:-moz-linear-gradient(top, #595959 , #515151);
+ border-radius:3px;
+ box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+ color:#f9f9f9;
+ font-family:Verdana, Geneva, sans-serif;
+ font-size:18px;
+ font-weight:bolder;
+ text-transform:uppercase;
+ 
+}
+table tr td button:active
+{
+ position:relative;
+ top:15px;
+}
+table tr td a
+{
+ text-decoration:none;
+ color:#ffffff;
+ font-family:Verdana, Geneva, sans-serif;
+ font-size:20px;
+}
+}
+-->

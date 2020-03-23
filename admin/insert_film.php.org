@@ -1,0 +1,21 @@
+<?php
+include "../koneksi/koneksi.php";
+$id_film = $_POST['id_film'];
+$judul = $_POST['judul'];
+$tgl_tayang = $_POST['tgl_tayang'];
+$sampai_dengan = $_POST['sampai_dengan'];
+$sutradara = $_POST['sutradara'];
+$jenis_film = $_POST['jenis_film'];
+$durasi = $_POST['durasi'];
+$sinopsis = $_POST['sinopsis'];
+$gambar = $_POST['gambar'];
+
+$query = mysql_query ("INSERT INTO film(id_film, judul, tgl_tayang, sampai_dengan, sutradara, jenis_film, durasi, sinopsis, gambar ) 
+		VALUES ('$id_film', '$judul', '$tgl_tayang', '$sampai_dengan', '$sutradara', '$jenis_film', '$durasi', '$sinopsis', '$gambar')",$konek)or die (mysql_error());
+if($query) {
+?>
+<script language="JavaScript">
+document.location='addFilm.php'</script>
+<?php
+}
+?>
